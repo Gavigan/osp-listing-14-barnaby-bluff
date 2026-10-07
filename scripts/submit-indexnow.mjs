@@ -1,7 +1,17 @@
 import { readFile } from 'node:fs/promises';
-const host=(await readFile('CNAME','utf8')).trim();
+
+const OSP_DOMAIN_SUFFIX='.osprealestate.com';
+const host=(await readFile('CNAME','utf8')).trim().toLowerCase();
+const propertyLabel=host.endsWith(OSP_DOMAIN_SUFFIX) ? host.slice(0,-OSP_DOMAIN_SUFFIX.length) : '';
+const validPropertyLabel=
+  propertyLabel.length>0 &&
+  propertyLabel.length<=63 &&
+  !propertyLabel.includes('.') &&
+  /^[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/.test(propertyLabel);
+
+if(!validPropertyLabel) throw new Error(`Unexpected property host: ${host || '(empty)'}`);
+
 const key=(await readFile('indexnow-key.txt','utf8')).trim();
-if(!['2blakelane.osprealestate.com','14barnabybluff.osprealestate.com'].includes(host)) throw new Error('Unexpected property host');
 const keyLocation=`https://${host}/indexnow-key.txt`;
 let ready=false;
 for(let attempt=0;attempt<12;attempt++){
