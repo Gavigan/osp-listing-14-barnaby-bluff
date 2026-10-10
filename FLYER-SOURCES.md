@@ -22,9 +22,9 @@ The general https://osprealestate.com/ homepage displays older/different dimensi
 
 Source: current repository `index.html`, dedicated property microsite and listing description.
 
-- Latest posted owner update: September 26, 2026; mechanical, plumbing and electrical rough-ins in progress.
+- Latest owner update supplied by Billy on October 10, 2026: MPE inspection scheduled for Wednesday, October 14, 2026; insulation and drywall planned next after required inspections and approvals.
 - Framing inspection passed September 3, 2026, according to the posted owner timeline.
-- Insulation, drywall and finishes remain upcoming. No newer construction confirmation was found in the site's current published update.
+- Insulation, drywall and finishes remain upcoming. The scheduled MPE inspection is not represented as passed; no exact start date for insulation or drywall was supplied.
 - All design features are expressly labeled planned. Completion timing and any finish personalization require builder confirmation. Approved construction and purchase documents control.
 
 ## Media, community and contact
