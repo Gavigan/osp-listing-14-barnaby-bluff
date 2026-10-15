@@ -18,7 +18,9 @@ The direct link works without JavaScript or when an iframe is blocked.
 
 Live form inspected October 15, 2026: first name and email required; last name,
 phone, question and Bull Point interest optional. Email reply permission is
-unchecked. This **does not yet meet name + required cell / optional email**.
+unchecked. Billy’s updated requirement is exactly **name, email and phone**, plus the
+necessary contact consent; no separate last-name, question or interest field.
+The current native field layout still needs simplification.
 Fields must be changed in the shared native form; an iframe parent cannot
 securely override them. Such a change affects every Bull Point page using it.
 
@@ -35,9 +37,11 @@ No separate opportunity/pipeline stage creation was verified in this session.
 
 Authenticated access to the existing HighLevel location is needed to:
 
-1. Set the shared buyer form to the requested name and required cell number,
-   optional question and appropriate contact permission. Decide whether email
-   should remain optional. Keep marketing permission separate and unchecked;
+1. Simplify the shared buyer form to three required contact fields: name, email
+   and phone, plus appropriate contact permission. Remove the separate last-name,
+   question and interest controls. Retain property/source attribution as hidden
+   native fields; update the website mapping if the existing message field is
+   removed rather than hidden. Keep marketing permission separate and unchecked;
    preserve existing opt-outs. Update the native privacy link from its legacy
    preview URL to the current Bull Point privacy page.
 2. Verify native contact duplicate settings, phone normalization/validation,
@@ -58,7 +62,7 @@ Authenticated access to the existing HighLevel location is needed to:
 
 No test inquiry was submitted during this change: there is no authenticated
 CRM readback session to verify delivery or the sending hold. Integration is
-prepared for review; **name/cell capture, deduplication, pipeline placement and
+prepared for review; **the three-field contact form, deduplication, pipeline placement and
 notification delivery are not certified operational**. Do not treat a native
 form confirmation or historical September tests as current end-to-end proof.
 
