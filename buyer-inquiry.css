@@ -1,0 +1,12 @@
+.buyer-inquiry{background:var(--ivory);color:var(--navy);display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(24px,5vw,80px);align-items:start}
+.buyer-inquiry h2{font-size:clamp(38px,5vw,64px)}
+.buyer-invitation p{max-width:580px}
+.buyer-invitation a{text-decoration:underline;text-underline-offset:4px}
+.buyer-direct{display:flex;gap:18px;flex-wrap:wrap;margin:24px 0}
+.buyer-form{min-width:0;background:#fff;border:1px solid var(--gold)}
+.buyer-form iframe{display:block;width:100%;max-width:100%;min-height:950px;border:0}
+.buyer-form-fallback{padding:20px;margin:0;border-bottom:1px solid var(--line)}
+.buyer-form-fallback .button{display:inline-block;max-width:100%;white-space:normal;line-height:1.7}
+.buyer-form-fallback span{display:block;font-size:13px;line-height:1.6;margin-top:12px}
+.buyer-inquiry :focus-visible{outline:3px solid var(--gold);outline-offset:4px}
+@media(max-width:900px){.buyer-inquiry{grid-template-columns:minmax(0,1fr)}}
